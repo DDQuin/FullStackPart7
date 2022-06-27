@@ -1,0 +1,1 @@
+Some of part 7 in bloglistfrontend
