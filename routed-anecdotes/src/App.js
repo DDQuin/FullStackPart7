@@ -99,6 +99,12 @@ const CreateNew = ({addNew, setNotification}) => {
     
   }
 
+  const resetAll = () => {
+    content.reset()
+    author.reset()
+    info.reset()
+  }
+
   return (
     <div>
       <h2>create a new anecdote</h2>
@@ -116,7 +122,9 @@ const CreateNew = ({addNew, setNotification}) => {
           <input {...info} />
         </div>
         <button>create</button>
+        
       </form>
+      <button onClick={resetAll}>reset</button>
     </div>
   )
 
